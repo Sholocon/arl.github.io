@@ -18,12 +18,12 @@
         }
 
         #container {
-            margin-top: 100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 30px;
+            padding-bottom: 0px;
             border: 2px solid #ccc;
             border-radius: 10px;
             box-shadow: 0px 0px 10px #aaa;
@@ -32,7 +32,6 @@
         }
 
         #container:hover {
-            margin-top: 100px;
             transform: scale(1.1);
         }
 
@@ -49,7 +48,7 @@
             margin-bottom: 10px;
             text-align: center;
             font-weight: bold;
-			font-size: 20px;
+            font-size: 20px;
         }
 
         button {
@@ -62,18 +61,13 @@
             border-radius: 5px;
             cursor: pointer;
             transition: all 0.3s ease-in-out;
-			font-weight: bold;
-			font-size: 18px;
+            font-weight: bold;
+            font-size: 18px;
         }
 
         button:hover {
             background-color: #3e8e41;
             transform: translateY(-5px);
-        }
-
-        #container:hover button {
-            background-color: #3e8e41;
-            transform: scale(1.1) translateY(-5px);
         }
 
         .charaimg {
@@ -121,10 +115,10 @@
 
         @media screen and (max-width: 1080px) {
             #container {
-                transform: scale(1.5);
+                transform: scale(1.4);
             }
             #container:hover {
-                transform: scale(1.5);
+                transform: scale(1.4);
             }
         }
     </style>
@@ -160,7 +154,7 @@
                             case "瘋狂瑪吉":
                                 image = "images/瘋狂瑪吉.png";
                                 break;
-							case "彈道":
+                            case "彈道":
                                 image = "images/彈道.png";
                                 break;
                         }
@@ -276,7 +270,7 @@
                 img.width = 200;
                 img.height = 200;
                 img.classList.add("charaimg");
-				img.style.marginBottom = "30px";
+		img.style.marginBottom = "30px";
                 li.appendChild(img);
                 const p = document.createElement("p");
                 p.textContent = character.name;
